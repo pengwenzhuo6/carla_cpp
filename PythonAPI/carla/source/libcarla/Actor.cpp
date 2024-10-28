@@ -82,7 +82,7 @@ void export_actor() {
   using namespace boost::python;
   namespace cc = carla::client;
   namespace cr = carla::rpc;
-  namespace ctm = carla::traffic_manager;
+  namespace ctm = carla::traffic_manager; //创建一个新的函数
 
   enum_<cr::ActorState>("ActorState")
     .value("Invalid", cr::ActorState::Invalid)
