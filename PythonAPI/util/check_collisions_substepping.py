@@ -23,6 +23,7 @@ import shutil
 import numpy as np
 
 try:
+     # 将CARLA库的路径添加到系统路径中，根据Python版本和操作系统选择对应的egg文件
     sys.path.append(glob.glob('../carla/dist/carla-*%d.%d-%s.egg' % (
         sys.version_info.major,
         sys.version_info.minor,
