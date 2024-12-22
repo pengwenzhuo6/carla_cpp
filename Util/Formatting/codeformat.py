@@ -623,6 +623,6 @@ def main():
         # 如果没有失败，则以绿色打印“SUCCESS”并以状态码0退出程序
         cprint("SUCCESS", "green")
         sys.exit(0)
-
+# 检查当前脚本是否是主入口点
 if __name__ == "__main__":
     main()
