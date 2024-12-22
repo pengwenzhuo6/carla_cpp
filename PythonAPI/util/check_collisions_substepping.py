@@ -54,6 +54,7 @@ class Scenario():
         self.reload_world(settings, spectator_tr)
 
         # Init timestamp
+        # 获取世界的当前快照，记录初始化时的帧编号和经过的时间
         world_snapshot = self.world.get_snapshot()
         self.init_timestamp = {'frame0' : world_snapshot.frame, 'time0' : world_snapshot.timestamp.elapsed_seconds}
 
