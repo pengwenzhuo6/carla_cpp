@@ -78,6 +78,11 @@ class Scenario():
         self.active = False
 
     def reload_world(self, settings = None, spectator_tr = None):
+        """
+        重新加载CARLA世界，应用给定的设置参数，并设置观察者的变换（如果有）
+        :param settings: 世界的设置参数（可选）
+        :param spectator_tr: 观察者的变换信息（可选）
+        """
         self.client.reload_world()
         if settings is not None:
             self.world.apply_settings(settings)
