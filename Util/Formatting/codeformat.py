@@ -625,4 +625,5 @@ def main():
         sys.exit(0)
 
 if __name__ == "__main__":
+    # 如果是主入口点，则调用 main 函数
     main()
